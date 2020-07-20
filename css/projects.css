@@ -1,0 +1,289 @@
+body{
+    background-color: #0B0B10;
+    color:white;
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+a:hover{
+    color: #0876D0;
+    transition: 0.4s ease;
+}
+
+/* Navigation */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+.nav-item{
+    font-family: futura-pt, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Logo */
+svg{
+    width:200px;
+    height: 150px;
+    fill: white;
+}
+
+#logo:hover path{
+    fill: #0876D0 !important;
+    transition: 0.4s ease;
+}
+
+/* Menu buttons*/
+#projects{
+    display: flex;
+    flex-direction: left;
+    align-items: center;
+}
+
+#projects svg{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+#projects:hover{
+    color: #0876D0;
+    transition: color 0.4s ease;  
+}
+
+#projects:hover path{
+    stroke: #0876D0 !important;
+    transition: 0.4s ease;
+}
+
+#menu{
+    display: flex;
+    flex-direction: left;
+    align-items: center;
+}
+
+#menu:hover {
+    color: #0876D0;
+    transition: color 0.4s ease;
+}
+
+#menu:hover rect{
+    fill: #0876D0 !important;
+    transition: fill 0.4s ease;
+}
+
+#menu svg{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+
+/* Left Side Name */
+aside{
+    width: 10%;
+    height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    display: flex;
+}
+
+.projectsSide{
+    margin: auto;
+    width: 10vw;
+}
+
+.projectsSide p{
+    transform: rotate(90deg);
+    text-align: center;
+    width:100%;
+    margin: 0 auto;
+    font-size: 70px;
+    font-family: futura-pt, sans-serif;
+    white-space: nowrap;
+}
+
+#emptySide{
+    width: 10vw;
+    height: calc(100vh - 200px);
+    color: #0B0B10;
+}
+
+/* Footer */
+.footer{
+    height: 100px;
+}
+/*-------*/
+
+/* Projects List*/
+section{
+    align-self: center;
+    margin: 0 auto;
+}
+
+.projectsList{
+    align-self: center;
+    margin: 0 auto;
+    display: grid;
+    height: 70vh;
+    width: 70vw;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "travel splitip "
+    "ontario ccs"
+    ;
+}
+
+
+.category{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
+    position: relative;
+    overflow: hidden; 
+}
+
+.category span{
+    position: absolute;
+}
+
+.wrapper{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;   
+}
+
+
+span{
+    opacity: 0;
+    font-family: futura-pt, sans-serif;
+    font-size: 65px;
+    color: #ffffff !important; 
+    text-align: center;
+}
+
+.category:hover span{
+    display: block;
+    opacity: 1;
+    transition: 0.6s ease-in-out;
+    z-index: -1;   
+}
+     
+      
+.wrapper:hover{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.05);
+    background-color: black;
+    opacity: 0.5;
+}
+
+
+
+#splitip{
+    height: 100%;
+    width: 100%;
+    grid-area: splitip;
+    background-image: url(../images/splitip.jpeg);
+    
+}
+
+#ontario{
+    height: 100%;
+    width: 100%;
+    grid-area: ontario;
+    background-image: url(../images/ontario.jpg); 
+}
+
+#ccs{
+    height: 100%;
+    width: 100%;
+    grid-area: ccs;
+    background-image: url(../images/ccs.jpg);
+}
+
+#travel{
+    height: 100%;
+    width: 100%;
+    grid-area: travel;
+    background-image: url(../images/travel2.jpg);
+}
+
+
+
+/* Media Query*/
+@media only screen and (max-width: 1000px){
+    #projects p{
+      display: none;
+    }
+
+    #menu p{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .projectsList{
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px 250px 250px;
+        grid-template-areas: 
+        "splitip"
+        "travel"
+        "ontario"
+        "ccs"
+        ;
+    }
+
+    .category{
+        margin: 20px;
+    }
+
+    .wrapper{
+        background-color: black;
+        opacity: 0.5;
+    }
+        
+    
+
+    .footer{
+        height: 100px;
+        width: 100px;
+    }
+
+    span{
+        font-size: 40px;
+        z-index: 3;
+        opacity: 1;
+    }
+
+    .projectsSide p{
+        font-size: 40px;
+        position: inherit;
+    }
+
+  }

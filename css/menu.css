@@ -1,0 +1,84 @@
+body{
+    background-color: #0B0B10;
+    /*background-color: grey;*/
+    color:white;
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0876D0;
+    transition: color 0.3s ease;
+}
+
+.menuList{
+    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "home"
+    "projects"
+    "AboutMe"
+    "Contact"
+    ;
+}
+
+.item{
+    font-size: 120px;
+    font-family: futura-pt, sans-serif;
+    text-align: center;  
+}
+
+#home{
+    grid-area: home;
+}
+
+#home:hover{
+    color: #0876D0;
+}
+
+#projects{
+    grid-area: projects;
+}
+
+#projects:hover{
+    color: #0876D0;
+}
+
+#aboutMe{
+    grid-area: AboutMe;
+}
+
+#aboutMe:hover{
+    color: #0876D0;
+}
+
+#contact{
+    grid-area: Contact;
+}
+
+#contact:hover{
+    color: #0876D0;
+}
+
+#close{
+    position: absolute;
+    right: 2em;
+    top: 2em;
+    height: 50px;
+    width: 50px;
+}
+
+#close:hover rect{
+    fill: #0876D0;
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip">
+      <use xlink:href="#fill"/>
+    </clipPath>
+    <clipPath id="clip-2">
+      <use xlink:href="#fill-2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_129" data-name="Group 129" transform="translate(-288 -7992.561)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(288 7992.561)" fill="none" stroke="#00cd00" stroke-width="5">
+      <circle cx="25" cy="25" r="25" stroke="none"/>
+      <circle cx="25" cy="25" r="22.5" fill="none"/>
+    </g>
+    <g id="Rectangle_34" data-name="Rectangle 34" transform="translate(300 8016.561)" fill="none" stroke="#00cd00" stroke-width="5">
+      <rect id="fill" width="27" height="3" rx="1.5" stroke="none"/>
+      <path d="M0,0.5h27M24.5,0v3M27,2.5h-27M2.5,3v-3" fill="none" clip-path="url(#clip)"/>
+    </g>
+    <g id="Rectangle_35" data-name="Rectangle 35" transform="translate(314.845 8004.151) rotate(90)" fill="none" stroke="#00cd00" stroke-width="5">
+      <rect id="fill-2" width="27.258" height="3.304" rx="1.652" stroke="none"/>
+      <path d="M0,0.8040363788604736h27.25830078125M24.75830078125,0v3.3040363788604736M27.25830078125,2.5h-27.25830078125M2.5,3.3040363788604736v-3.3040363788604736" fill="none" clip-path="url(#clip-2)"/>
+    </g>
+  </g>
+</svg>
