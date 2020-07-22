@@ -159,11 +159,11 @@ svg{
     flex: left;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "image image image"
-    "titre texte texte"
+    "titre image "
+    "texte image"
     ;
 }
 
@@ -171,22 +171,23 @@ svg{
     display: flex;
 }
 
-#imageSplitip{
+#imageOntario{
     grid-area: image;
-    background-size: cover;
-    background-image: url(../images/splitip.png);
+    background-image: url(../images/ontariodevices2.png);
     background-repeat: no-repeat;
-    background-position: center;  
+    background-position: center;
+    align-items: center;
+    
 }
 
 .titre{
     grid-area: titre;
-    text-align: center;
     font-family: futura-pt, sans-serif;
     font-size: 75px;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin: 0;
 }
 
 .texte{
