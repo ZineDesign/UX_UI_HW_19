@@ -153,6 +153,7 @@ svg{
 .container{
     height: 80% !important;
     width: 70%;
+    
 }
 
 .gridContain1{
@@ -177,7 +178,6 @@ svg{
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    
 }
 
 .titre{
@@ -218,79 +218,46 @@ svg{
     grid-area: texte2;
 }
 
-#splitipImage2{
+#imageOntario2{
     grid-area: image2;
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     background-size: cover;
-    background-image: url(../images/splitip2.png);
+    background-image: url(../images/ontarioDesktop.png);
     background-repeat: no-repeat;
     background-position: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 /* page 4 */
-.gridContain4 {
+
+.gridContain3{
+    flex: left;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-    "part1 part2"
+    "texte2 image2"
     ;
 }
 
-.part1 {
-    grid-area: part1;
-    display: flex;
-    flex-direction: column;
+#texte3{
+    grid-area: texte2;
 }
 
-.part2 {
-    grid-area: part2;
-    display: flex;
-    flex-direction: column;
-}
-
-.part2 img {
-    width: 60%;
-    height: 60%;
+#imageOntario3{
+    grid-area: image2;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-image: url(../images/ontario.ca.png);
+    background-repeat: no-repeat;
+    
     margin: 0 auto;
 }
 
-.part1 p{
-    padding: 0 3em 0 0;
-}
 
-.part2 h3{
-    margin-bottom: 5px;
-    font-family: futura-pt, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    color: #0876D0;
-    margin-top: 10px; 
-}
-
-.interview{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-     
-}
-
-.interview img {
-    height: 100px;
-    width: 100px;
-    margin: 0 auto;
-}
-
-.interview1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
 
 /* page 5 */
 .flexBoxV {
@@ -303,6 +270,7 @@ svg{
 .flexBoxV img{
     margin: 0 auto;
     height: 100%;
+    
 }
 
 ul{
@@ -319,21 +287,18 @@ ul{
 .flexBoxH {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;  
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
-.flexBoxH div {
-    display: flex;
-    height: 200px;
-    width: 200px;
-    margin: 0 20px;
-    padding: 20px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #565864;
+
+
+.flexBoxH img{
+    
+    height: 50%;
 }
+
+
 
 
 .flexBoxH div p{
@@ -358,6 +323,15 @@ ul{
     justify-content: center;  
 }
 
+#ontHeurAna ul li{
+    padding-bottom: 1em;
+    margin: 20px;
+    list-style-type: disc;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    list-style-position: inside
+}
 
 /* page 10 */
 .userT ul{
